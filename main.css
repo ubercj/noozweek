@@ -2,3 +2,9 @@ a:link,
 a:visited {
   color: inherit;
 }
+
+@include media-breakpoint-up(lg) {
+  .navbar-toggler {
+    display: none;
+  }
+}
