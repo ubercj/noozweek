@@ -3,3 +3,21 @@
   height: 30px;
   line-height: 2;
 }
+
+@media (min-width: 992px) {
+  .parent-row {
+    height: 100vh;
+  }
+
+  .scrollable {
+    height: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollable::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
