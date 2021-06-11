@@ -2,6 +2,14 @@ img {
   max-height: 500px;
 }
 
+.hover-red:hover {
+  color: #dc3545!important;
+}
+
+.hover-dark:hover {
+  color: #000!important;
+}
+
 #vs {
   width: 30px;
   height: 30px;
