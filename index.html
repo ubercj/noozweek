@@ -16,80 +16,151 @@
         <div class="mb-2 w-25 d-flex justify-content-end align-items-center">
           <a href="#" class="text-decoration-none text-reset text-uppercase mr-3">Login</a>
           <button type="button" class="btn btn-warning rounded-pill text-uppercase fw-bold ms-3">Subscribe</button>
-          <button class="navbar-toggler ms-3 border d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler ms-3 border d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </div>
     </header>
 
+    <!-- Offcanvas Nav -->
+    <nav class="offcanvas offcanvas-end" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasNav" aria-labelledby="offcanvasLabel">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas-body">
+        
+        <!-- Nav for Categories -->
+        <ul class="navbar-nav w-100 d-flex fw-bold pb-1 border-bottom text-nowrap">
+          <li class="nav-item">
+            <form action="" class="d-flex">
+              <input type="search" placeholder="Search" aria-label="Search" class="form-control">
+              <button class="btn border" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">U.S.</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">World</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Business</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Tech & Science</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Culture</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Newsgeek</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Sports</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Health</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-reset hover-red">Opinion</a>
+          </li>
+        </ul>
+
+        <!-- Nav for Trending -->
+        <ul class="navbar-nav d-flex w-100 fw-bold mt-2 text-uppercase">
+          <li class="nav-item d-flex align-items-center">
+            <h4 class="fs-5 mb-0 me-3 pe-none">Trending</h4>
+          </li>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Dogs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Memes</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Stonks</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">NFTs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Tik-tok</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar d-none d-lg-flex navbar-light bg-light">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-block w-100">
 
-            <!-- Nav for Categories -->
-            <ul class="navbar-nav w-100 d-flex fw-bold pb-1 border-bottom text-nowrap">
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">U.S.</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">World</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Business</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Tech & Science</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Culture</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Newsgeek</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Sports</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Health</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-reset hover-red">Opinion</a>
-              </li>
-              <li class="nav-item">
-                <form action="" class="d-flex">
-                  <input type="search" placeholder="Search" aria-label="Search" class="form-control">
-                  <button class="btn border" type="submit">#</button>
-                </form>
-              </li>
-            </ul>
+        <!-- Nav for Categories -->
+        <ul class="list-unstyled w-100 d-flex fw-bold pb-1 border-bottom text-nowrap">
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">U.S.</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">World</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Business</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Tech & Science</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Culture</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Newsgeek</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Sports</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Health</a>
+          </li>
+          <li class="nav-item me-2">
+            <a href="#" class="nav-link text-reset hover-red">Opinion</a>
+          </li>
+          <li class="nav-item">
+            <form action="" class="d-flex">
+              <input type="search" placeholder="Search" aria-label="Search" class="form-control">
+              <button class="btn border" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+          </li>
+        </ul>
 
-            <!-- Nav for Trending -->
-            <ul class="navbar-nav d-flex w-100 fw-bold mt-2 text-uppercase">
-              <li class="nav-item d-flex align-items-center">
-                <h4 class="fs-5 mb-0 me-3 pe-none">Trending</h4>
-              </li>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-muted hover-red">Dogs</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-muted hover-red">Memes</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-muted hover-red">Stonks</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-muted hover-red">NFTs</a>
-              </li>
-              <li class="nav-item me-3">
-                <a href="#" class="nav-link text-muted hover-red">Tik-tok</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- Nav for Trending -->
+        <ul class="list-unstyled d-flex w-100 fw-bold mt-2 text-uppercase">
+          <li class="nav-item d-flex align-items-center">
+            <h4 class="fs-5 mb-0 me-3 pe-none">Trending</h4>
+          </li>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Dogs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Memes</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Stonks</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">NFTs</a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="#" class="nav-link text-muted hover-red">Tik-tok</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
