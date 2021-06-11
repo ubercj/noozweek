@@ -10,6 +10,19 @@ img {
   color: #000!important;
 }
 
+.red-h:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h3:hover,
+h4:hover,
+h6:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+}
+
 #vs {
   width: 30px;
   height: 30px;
