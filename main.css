@@ -2,6 +2,13 @@ img {
   max-height: 500px;
 }
 
+.pipe:before {
+  content: "|";
+  font-weight: 100;
+  position: relative;
+  left: -1rem;
+}
+
 .hover-red:hover {
   cursor: pointer;
   color: #dc3545!important;
